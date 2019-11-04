@@ -5,20 +5,16 @@
     var slider = document.querySelector('.slider');
     var tape = slider.querySelector('.slider__tape');
     var count = 0;
-    var car = document.getElementById("idcar");
     
+  
+        
     var first = tape.querySelector('.slider__img');
     var newLast = document.createElement('img');
     newLast.setAttribute('src', first.getAttribute('src'));
     newLast.setAttribute('class', first.getAttribute('class'));
     newLast.classList.add('slider__img');
     tape.append(newLast);
-
-    function ocultar(){
-        car.style.display="none";
-        console.log('jueputa');
-    }
-    
+  
     function handleLast(){
         console.log('cambio');
         tape.classList.add('slider__tape--inactive');

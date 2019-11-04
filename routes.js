@@ -1,5 +1,6 @@
 const assert = require('assert');
 const ObjectID = require ('mongodb').ObjectID;
+var cartList = [];
 
 
 function createRoutes (app, db) {
@@ -7,6 +8,50 @@ function createRoutes (app, db) {
     app.get('/', (request, response) => {
         console.log('Alguien entró a la ruta inicial');
         response.sendFile(__dirname + '/public/index.html');
+    });
+
+    app.post('/api/cart/:id', (request, response) => {
+        var id = request.params.id;
+        const products = db.collection('products');
+        var query= {};        
+        
+        var esId=false;
+        products.find({})
+        // transformamos el cursor a un arreglo
+        .toArray((err, result) => {
+            // asegurarnos de que noh ay error
+            
+            //
+            
+            var c=0;
+            var cont=0;
+            for(c;c<result.length;c++){
+                if(request.params.id.toString()===result[c]._id.toString()){
+                    esId=true;         
+                    cartList.push(result[c]);
+                    
+                    cont+=1;
+                } 
+            }
+            
+            if(!esId){
+                response.send({
+                    message: 'error',
+                    cartLength: cartList.length
+                });
+                return;
+            }
+            
+            
+            console.log("cartList[0]");
+            response.send({
+                cartLength: cartList.length
+            });
+            
+        });
+        
+        
+        
     });
 
     // app.get('/tiendass', (request, response) => {
@@ -153,7 +198,7 @@ function createRoutes (app, db) {
         });
     });
 
-    app.get('/product/:id', function (req, res) {
+    app.get('/products/:id', function (req, res) {
         const products = db.collection('products');
         var query= {};        
         products.find({})
@@ -166,7 +211,7 @@ function createRoutes (app, db) {
             for(c;c<result.length;c++){
                 if(req.params.id.toString()===result[c]._id.toString()){
                     result[c].cartLength= cartList.length,
-                    res.render('product', result[c]);
+                    res.render('products', result[c]);
                 }
                 
             }
@@ -175,5 +220,7 @@ function createRoutes (app, db) {
         });
         
     });
+
+    
 }
     module.exports = createRoutes;

@@ -797,6 +797,15 @@ li {
 .form__filters {
   padding: 1em 0 1em 1.2em; }
 
+.carcar {
+  border: none;
+  color: black;
+  font-family: Nunito sans;
+  font-size: 1.2em; }
+  .carcar:hover {
+    color: white;
+    cursor: pointer; }
+
 .back {
   top: 80vh;
   position: absolute;
@@ -920,7 +929,8 @@ li {
   display: grid;
   -ms-grid-columns: auto auto auto;
   grid-template-columns: auto auto auto;
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
 
 .order {
   padding: 10px 3em 1em 0;
@@ -961,6 +971,9 @@ li {
   -ms-flex-align: end;
   align-items: flex-end;
   width: 65%; }
+
+a {
+  text-decoration: none; }
 
 .gproducts {
   display: -webkit-box;
@@ -1053,7 +1066,9 @@ li {
   padding: 1em;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  font-family: Nunito sans;
+  font-size: 1em; }
   .right__carcar:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -1085,6 +1100,12 @@ li {
   padding: 0 0 10px 25px;
   width: 60%; }
 
+.cart__count {
+  font-family: Nunito sans;
+  font-size: .7em;
+  color: black;
+  font-weight: 900; }
+
 .prices {
   font-family: Nunito Sans;
   font-size: .9em;
@@ -1097,4 +1118,49 @@ li {
 .products__name {
   font-family: Nunito sans;
   font-size: 1em;
-  font-weight: bold; }
+  font-weight: bold;
+  color: black;
+  padding: 1em 0 1em 0; }
+
+.viewProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.detail {
+  width: 80%;
+  padding: 2em;
+  background-color: #f5db2f;
+  border-radius: 2em; }
+
+.properties__title {
+  font-family: Nunito sans;
+  font-size: 2em;
+  font-weight: 900;
+  color: black; }
+
+.properties__subtitle {
+  font-family: Nunito sans;
+  font-size: 1em;
+  font-weight: regular;
+  color: #818181; }
+
+.properties__price {
+  font-family: Nunito Sans Black;
+  font-size: 2.5em;
+  color: #678E12;
+  margin-top: .2em; }
