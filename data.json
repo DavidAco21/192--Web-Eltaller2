@@ -1,0 +1,224 @@
+[
+{
+    "mainName": "Sandwich de Chorizo",
+    "price": 5000,
+    "typeOfBread": "Pan Árabe",
+    "typeOfMeat": "Chorizo",
+    "ingredients": "Chorizo, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de chorizo, bajos en grasa y saludables y ricos al mismo tiempo, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 3,
+    "popularity": 5,
+    "image":"./public/images/chorizo.png"
+},
+{
+    "mainName": "Sandwich de Pollo",
+    "price": 6000,
+    "typeOfBread": "Pan de Trigo",
+    "typeOfMeat": "Pollo",
+    "ingredients": "Pollo, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de pollo, saludables y ricos, adecuado para fiestas infantiles ya que tienen una textura suave por su pan a base de trigo",
+    "time": 4,
+    "popularity": 6,
+    "image":"./public/images/pollo.png"
+},
+{
+    "mainName": "Sandwich de Atún",
+    "price": 7000,
+    "typeOfBread": "Pan de Ajonjolí",
+    "typeOfMeat": "Atún",
+    "ingredients": "Atún, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de atún, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 5,
+    "popularity": 4,
+    "image":"./public/images/atun.png"
+},
+{
+    "mainName": "Sandwich de Ganso",
+    "price": 8000,
+    "typeOfBread": "Pan de Queso",
+    "typeOfMeat": "Ganso",
+    "ingredients": "Ganso, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de ganso, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 6,
+    "popularity": 7,
+    "image":"./public/images/ganso.png"
+},
+{
+    "mainName": "Sandwich de Gulach",
+    "price": 11000,
+    "typeOfBread": "Pan Árabe",
+    "typeOfMeat": "Gulach",
+    "ingredients": "Gulach, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de gulach, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 5,
+    "popularity": 9,
+    "image":"./public/images/gulach.png"
+},
+{
+    "mainName": "Sandwich de Malaya",
+    "price": 9000,
+    "typeOfBread": "Pan de Trigo",
+    "typeOfMeat": "Malaya",
+    "ingredients": "Malaya, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de Malaya, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 6,
+    "popularity": 2,
+    "image":"./public/images/malaya.png"
+},
+{
+    "mainName": "Sandwich de Punta de Ganso",
+    "price": 9000,
+    "typeOfBread": "Pan de Ajonjolí",
+    "typeOfMeat": "Punta de Ganso",
+    "ingredients": "Punta de ganso, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de punta de ganso, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 4,
+    "popularity": 6,
+    "image":"./public/images/puntaganso.png"
+},
+{
+    "mainName": "Sandwich de Cerdo",
+    "price": 5000,
+    "typeOfBread": "Pan de Queso",
+    "typeOfMeat": "Cerdo",
+    "ingredients": "Cerdo, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de cerdo, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 5,
+    "popularity": 7,
+    "image":"./public/images/cerdo.png"
+},
+{
+    "mainName": "Sandwich de Jamón",
+    "price": 20000,
+    "typeOfBread": "Pan Árabe",
+    "typeOfMeat": "Jamón",
+    "ingredients": "Jamón, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de Jamón, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 12,
+    "popularity": 10,
+    "image": "./public/images/sandwichdejamon.png"
+
+},
+{
+    "mainName": "Sandwich de Lemur",
+    "price": 18000,
+    "typeOfBread": "Pan de Trigo",
+    "typeOfMeat": "Lemur",
+    "ingredients": "Lemur, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de lemur, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 2,
+    "popularity": 8
+    
+},
+{
+    "mainName": "Sandwich de Armadillo",
+    "price": 20000,
+    "typeOfBread": "Pan de Ajonjolí",
+    "typeOfMeat": "Armadillo",
+    "ingredients": "Armadillo, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de armadillo, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 12,
+    "popularity": 5
+},
+{
+    "mainName": "Sandwich de Zorro",
+    "price": 21000,
+    "typeOfBread": "Pan de Queso",
+    "typeOfMeat": "Zorro",
+    "ingredients": "Zorro, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de zorro, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 4,
+    "popularity": 6
+},
+{
+    "mainName": "Sandwich de Salami",
+    "price": 8000,
+    "typeOfBread": "Pan Árabe",
+    "typeOfMeat": "Salami",
+    "ingredients": "Salami, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de salami, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 4,
+    "popularity": 7
+},
+{
+    "mainName": "Sandwich de Salchicha",
+    "price": 2000,
+    "typeOfBread": "Pan de Trigo",
+    "typeOfMeat": "Salchicha",
+    "ingredients": "Salchicha, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de salchicha, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 3,
+    "popularity": 4
+},
+{
+    "mainName": "Sandwich de Sabor Sorpresa",
+    "price": 11000,
+    "typeOfBread": "Pan de Ajonjolí",
+    "typeOfMeat": "Sorpresa",
+    "ingredients": "Sorpresa, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de sorpresa, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": "3 minutos en plancha",
+    "popularity": 6
+},
+{
+    "mainName": "Sandwich de Roast Beef",
+    "price": 12000,
+    "typeOfBread": "Pan de Queso",
+    "typeOfMeat": "Roast Beef",
+    "ingredients": "Roast Beef, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de roast beef, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 5,
+    "popularity": 8
+},
+{
+    "mainName": "Sandwich de Oso",
+    "price": 15000,
+    "typeOfBread": "Pan Árabe",
+    "typeOfMeat": "Oso",
+    "ingredients": "Oso, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de oso, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 6,
+    "popularity": 7
+},
+{
+    "mainName": "Sandwich de Elefante",
+    "price": 12000,
+    "typeOfBread": "Pan de Trigo",
+    "typeOfMeat": "Elefante",
+    "ingredients": "Elefante, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de elefante, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 15,
+    "popularity": 9
+},
+{
+    "mainName": "Sandwich de Carne",
+    "price": 7000,
+    "typeOfBread": "Pan de Ajonjolí",
+    "typeOfMeat": "Carne",
+    "ingredients": "Carne, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de carne, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 3,
+    "popularity": 8
+},
+{
+    "mainName": "Sandwich de Pato",
+    "price": 21000,
+    "typeOfBread": "Pan de Queso",
+    "typeOfMeat": "Pato",
+    "ingredients": "Pato, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de pato ahumado, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 4,
+    "popularity": 3
+},
+{
+    "mainName": "Sandwich de Pavo",
+    "price": 13000,
+    "typeOfBread": "Pan Árabe",
+    "typeOfMeat": "Pavo",
+    "ingredients": "Pavo, Queso, lechuga, Tomate, Salsas",
+    "description": "Deliciosos sandwiches de pavo, bajos en grasa y saludables y ricos al mismo time, recomendados para fiesas y reuniones en las que quieres alimentar a todos tus invitado de manera rica, economica y saludable.",
+    "time": 4,
+    "popularity":10,
+    "image": "./public/images/pavo.png"
+}
+]

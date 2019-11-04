@@ -1,0 +1,1100 @@
+body {
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.header__taller2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-bottom: 1px solid #f5db2f; }
+
+.logo {
+  margin: 0 0 10px 10px;
+  width: 50px;
+  padding-top: 10px; }
+
+.logo2 {
+  margin: 0 0 10px 10px;
+  width: 50px;
+  padding-top: 10px; }
+
+.header__nombreLogo {
+  font-family: Nunito Sans Black;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin-left: 25px; }
+
+.header__nombreLogomain {
+  font-family: Nunito Sans Black;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-left: 25px; }
+
+.links {
+  margin-right: 25px;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  font-family: Nunito Sans;
+  font-style: normal;
+  color: white; }
+
+.navs {
+  margin-right: 25px;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  font-family: Nunito Sans;
+  font-style: normal;
+  color: black; }
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s; }
+
+.header__global {
+  margin-right: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header__global .links {
+  position: relative;
+  padding: 5px 0px; }
+
+.header__global .navs {
+  position: relative;
+  padding: 5px 0px; }
+
+.header__global .links::before {
+  content: "";
+  display: block;
+  background: #f5db2f;
+  height: 1px;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+
+.header__global .navs::before {
+  content: "";
+  display: block;
+  background: #f5db2f;
+  height: 1px;
+  width: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+
+.header__global .links:hover::before {
+  width: 100%; }
+
+.header__global .navs:hover::before {
+  width: 100%; }
+
+.button {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  color: black;
+  background-color: #f5db2f;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border-style: none;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  -o-transition: transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+  cursor: pointer; }
+
+.banner {
+  background-image: url("/images/images1/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+.banner__principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 3;
+  height: 80vh; }
+
+.banner__autor {
+  font-family: Cabin regular;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 32px;
+  color: white;
+  margin-top: -50px; }
+
+.bannerComplete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.banner__sandwichs {
+  font-family: Nunito Sans black;
+  font-size: 50px;
+  color: white;
+  margin-top: -10px; }
+
+.banner__slogan {
+  font-family: Nunito Sans ExtraLight;
+  font-style: normal;
+  color: white;
+  margin-top: -10px;
+  font-size: 30px; }
+
+.button--cta {
+  margin-top: 20px;
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  background-color: #f5db2f;
+  background-image: none; }
+
+.header__left:hover {
+  -webkit-transform: translate(20px, 0px);
+  -ms-transform: translate(20px, 0px);
+  transform: translate(20px, 0px);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease; }
+
+.button:hover {
+  -webkit-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  -o-transition: transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease; }
+
+.links:hover {
+  color: #f5db2f; }
+
+.car {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  -o-transition: transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease; }
+
+.car:hover {
+  -webkit-transform: rotate(360deg) scale(1.2);
+  -ms-transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.2);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  -o-transition: transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease; }
+
+.specifics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em; }
+
+.specifics__right {
+  width: 35%;
+  height: 35%;
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  -o-transition: transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease; }
+
+.specifics__right:hover {
+  -webkit-transform: translate(10px, 0);
+  -ms-transform: translate(10px, 0);
+  transform: translate(10px, 0);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  -o-transition: transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease; }
+
+.specifics__title {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 65px; }
+
+.specifics__list {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+li {
+  line-height: 350%;
+  background: url("/images/images1/check.png") no-repeat left center;
+  padding-left: 2em; }
+
+.drink__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 80vh;
+  background-image: url("/images/images1/bebidass.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.drink__banner {
+  width: 100%; }
+
+.drink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 2; }
+
+.drinks {
+  position: absolute;
+  font-family: Nunito Sans Black;
+  color: white;
+  padding-top: 1em;
+  font-size: 2em;
+  cursor: pointer;
+  text-shadow: 0px 2px 4px #6ea0db; }
+
+.drink__sodas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.sodas__img {
+  width: 33%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom; }
+
+.hover {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -14%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom; }
+
+.hover:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom; }
+
+.sodas__img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom; }
+
+.drinks--other {
+  color: #FC58BA;
+  font-size: 1.4em;
+  font-style: italic; }
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 80vh; }
+
+.top__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("/images/images1/lechuga.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%; }
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2em; }
+
+.text__p {
+  font-size: 1.5em;
+  color: white;
+  font-family: Nunito Sans Regular;
+  text-align: center;
+  text-shadow: 0px 2px 4px black; }
+
+.text__title {
+  font-size: 2.7em;
+  color: white;
+  font-family: Nunito Sans Black;
+  text-shadow: 0px 2px 4px black;
+  text-align: center; }
+
+.top__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("/images/images1/chorizo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%; }
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("/images/images1/vaso.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh; }
+
+.menu {
+  height: 80vh;
+  background-image: url("/images/images1/menufondo.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.menu__textgeneral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.menu__title {
+  font-size: 3em;
+  font-family: Nunito Sans Black;
+  color: black;
+  text-decoration: underline;
+  -webkit-transition: -webkit-transform  0.5s ease;
+  transition: -webkit-transform  0.5s ease;
+  -o-transition: transform  0.5s ease;
+  transition: transform  0.5s ease;
+  transition: transform  0.5s ease, -webkit-transform  0.5s ease; }
+
+.menu__title:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.menu__text {
+  font-size: 1.8em;
+  color: black;
+  font-family: Nunito Sans regular;
+  text-align: center;
+  margin: 0; }
+
+.slider {
+  overflow: hidden; }
+
+.slider__tape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+
+.slider__tape--inactive {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+.slider__img {
+  width: 100%;
+  padding: 4em 2em 0em 2.7em;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  cursor: pointer; }
+
+.button--right {
+  width: 100%;
+  background-color: #fb2424; }
+
+.arrowright {
+  width: 5%; }
+
+.slider__img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.menu__other {
+  font-family: Nunito Sans Black;
+  font-style: italic; }
+
+.menu__another {
+  color: black;
+  font-family: Nunito Sans Black;
+  font-style: italic; }
+
+.newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white; }
+
+.newsletter__content {
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.button--newsletter {
+  width: 90%; }
+
+.newsletter__text {
+  font-size: 1.5em;
+  font-family: Cabin Black;
+  text-align: center; }
+
+.inputs {
+  padding: .8em 4em;
+  border-radius: 5px;
+  border: .5px dashed; }
+
+.newsletter__inputs {
+  padding: 2em; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fb2424; }
+
+.footer__a {
+  padding: 2em 2em 2em 2em;
+  text-decoration: none;
+  font-family: Nunito Sans;
+  color: black;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.footer__a:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  color: white; }
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.footer__p {
+  padding: 0em 2em;
+  font-family: Nunito Sans; }
+
+.footer__copyright {
+  font-family: Nunito Sans;
+  padding: 2em; }
+
+.header__btn {
+  background: none;
+  border: none;
+  display: none; }
+
+@media (max-width: 500px) {
+  .header__global {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: none;
+    -webkit-transform: translate(-100%, 0%);
+    -ms-transform: translate(-100%, 0%);
+    transform: translate(-100%, 0%); }
+  .header__global--active {
+    opacity: 1;
+    pointer-events: all;
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%); }
+  .header__btn {
+    display: block; } }
+
+@media screen and (max-width: 800px) {
+  .banner__sandwichs {
+    text-align: center; }
+  .specifics {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .specifics__title {
+    font-size: 2.5em;
+    text-align: center; }
+  .specifics__list {
+    text-align: center; }
+  .drinks {
+    text-align: center; }
+  .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%; }
+  .top__left {
+    width: 100%; }
+  .top__right {
+    width: 100%; }
+  .bottom {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .newsletter__content {
+    padding: 10em; } }
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/fonts/NunitoSans-Regular.ttf");
+  src: url("/fonts/NunitoSans-bold.ttf");
+  src: url("/fonts/NunitoSans-Light.ttf"); }
+
+.left__types {
+  border: 2px solid #f5db2f;
+  border-radius: 3em;
+  padding: 2em;
+  height: 50%; }
+
+.form__filters {
+  padding: 1em 0 1em 1.2em; }
+
+.back {
+  top: 80vh;
+  position: absolute;
+  width: 20%; }
+
+.sectionProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 2em; }
+
+.filter__title {
+  font-family: Nunito sans;
+  font-size: 1em;
+  font-weight: bold;
+  color: BLACK; }
+
+.line {
+  width: 1px;
+  height: 100vh;
+  background-color: #f5db2f; }
+
+.type__title {
+  font-family: Nunito sans;
+  font-size: 1em;
+  font-weight: 900;
+  padding: .5em; }
+
+.filters {
+  font-family: Nunito sans Light;
+  font-size: 1em;
+  font-weight: lighter;
+  color: grey;
+  text-decoration: none;
+  padding: 10px 0 10px 50px; }
+
+.left__title {
+  font-family: Nunito sans;
+  font-size: 2em;
+  font-weight: 900; }
+
+.types__breads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.types__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.types__meats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.tx20 {
+  width: 65%;
+  border: .5px solid black;
+  border-radius: 25px;
+  padding: 1em; }
+
+.generalProducts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  width: 100%; }
+
+.order {
+  padding: 10px 3em 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.orderandproducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 65%; }
+
+.gproducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  border-radius: 20px; }
+  .gproducts:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    background-color: #f5db2f; }
+
+.order__name {
+  font-family: Nunito sans;
+  font-weight: bold;
+  font-size: .8em;
+  margin-bottom: 5px;
+  background-color: #f5db2f;
+  border-radius: 2em;
+  border: none; }
+
+.order__select {
+  border-radius: 25px;
+  font-family: Nunito sans;
+  font-weight: bold;
+  font-size: .8em; }
+
+.priceandproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.features__products {
+  font-family: Nunito sans;
+  font-size: .7em;
+  color: #4e4e4e;
+  font-weight: bold;
+  margin-top: -1em;
+  line-height: .9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+
+.right__carcar {
+  padding: 1em;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .right__carcar:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+
+.breadandcar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.products__list {
+  padding: 0 0 10px 25px;
+  width: 60%; }
+
+.prices {
+  font-family: Nunito Sans;
+  font-size: .9em;
+  color: white;
+  background-color: black;
+  padding: 0 15px;
+  border-radius: 20px;
+  font-weight: 900; }
+
+.products__name {
+  font-family: Nunito sans;
+  font-size: 1em;
+  font-weight: bold; }

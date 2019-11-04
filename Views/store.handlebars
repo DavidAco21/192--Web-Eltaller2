@@ -1,0 +1,86 @@
+<img class="back" src="/images/lechugafondo.png" alt="">
+<div class="sectionProducts">
+    <div class="left__types">
+        <div class="filter__title">FILTROS</div>
+        <div class="types__breads">
+            <div class="type__title">Tipo de Pan</div>
+            <form class="form__filters" action="/tienda" method="GET">
+            <select class="order__select" name="filter__bread">
+            <option value="ar">Pan árabe</a>
+            <option value="tri">Pan de trigo</a>
+            <option value="ajo">Pan de ajonjolí</a>
+            <option value="que">Pan de queso</a>
+            </select>
+            <button class="order__name" type="submit">Filtrar</button>
+            </form>
+        </div>
+
+        <div class="types__prices">
+            <div class="type__title">Precios</div>
+            <form class="form__filters" action="/tienda" method="GET">
+             <select class="order__select" name="filter__price">
+            <option value="<3000">Menor que 3.000</a>
+            <option value="3-10">Entre 3.000 y 10.000</a>
+            <option value=">10">Mayor a 10.000</a>
+            </select>
+            <button class="order__name" type="submit">Filtrar</button>
+            </form>
+        </div>
+
+        <div class="types__meats">
+            <div class="type__title">Tiempo de Cocción</div>
+            <form class="form__filters" action="/tienda" method="GET">
+             <select class="order__select" name="filter__time">
+            <option value="<5">Menor a 5 Minutos </a>
+            <option value="5-10">Entre 5 y 10 Minutos</a>
+            <option value=">10">Mayor a 10 Minutos</a>
+            </select>
+            <button class="order__name" type="submit">Filtrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="orderandproducts">
+        <div class="order">
+            <form action="/tienda" method="GET">
+            <button class="order__name" type="submit">Ordenar</button>
+            <select class="order__select" name="order__products">
+                <option value="orderTime">Menor a mayor tiempo de cocción</option>
+                <option value="orderPrice">Menor precio a mayor precio</option>
+                <option value="orderPopularity">Más vendidos del mes</option>
+            </select>
+            </form>
+        </div>
+
+        <div class="generalProducts">
+
+            {{#each products}}
+            <div class="gproducts">
+                <p class="prices">${{price}}</p>
+                <img class="tx20" src="{{image}}" alt="">
+                <div class="products__list">
+                    <div class="priceandproduct">
+                        <p class="products__name">{{mainName}}</p>
+                        
+                    </div>
+
+                    <div class="features__products">
+                        <div class="breadandcar">
+                            <p class="typeBread">{{typeOfBread}}</p>
+                            
+                        </div>
+
+                        <p class="description">{{ingredients}}</p>
+                       <div class="right__carcar">
+                       <img src="/images/images1/addcar.png" alt="">
+                       </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+    
+</div>
