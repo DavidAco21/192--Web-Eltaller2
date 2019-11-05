@@ -1,51 +1,53 @@
-<div class="generalViews">
-<div class="viewProducts">
-    <div class="imageDetail">
-        <img class="detail" src="{{image}}" alt="">
-    </div>
-
-    <div class="properties">
-        <div class="properties__title">{{mainName}}</div>
-        <div class="properties__subtitle">Se entrega recien preparado</div>
-        <div class="properties__price">${{price}}</div>
-        <div class="methodsOfPay">
-            <img src="" alt="" class="money">
-            <p class="pay">Paga en efectivo</p>
-        </div>
-        <div class="methodsOfPay">
-            <img src="" alt="" class="money">
-            <p class="pay">Otro medio de pago</p>
-
+<img class="background__products" src="/images/tomate.png" alt="">
+<div class="megaView">
+    <div class="viewProducts">
+        <div class="imageDetail">
+            <img class="detail" src="{{image}}" alt="">
         </div>
 
-        <a class="makeAnOrder" href="">HACER PEDIDO</a>
- </div>
+        <div class="lineDetail"></div>
+
+
+        <div class="properties">
+            <div class="properties__title">{{mainName}}</div>
+            <p class="detailContent__ingredients">{{ingredients}}</p>
+            <p class="detailContent">{{description}}</p>
+            <div class="properties__price">${{price}}</div>
+            <div class="methodsOfPay">
+                <img class="pay__image" src="/images/money.png" alt="" class="money">
+                <p class="pay">Paga en efectivo</p>
+            </div>
+            <div class="methodsOfPay">
+                <img class="pay__image" src="/images/credit cards.png" alt="" class="money">
+                <p class="pay">Otro medio de pago</p>
+
+            </div>
+            <a class="carcar carcar--products" data-name="{{this._id}}" href="#">
+                <p>AÑADIR AL CARRITO</p>
+            </a>
+            <a class="makeAnOrder" href="">HACER PEDIDO</a>
+
+
+
+        </div>
+
+    </div>
+    <div class="brands">
+        <div class="brand__text">
+            Usamos marcas 100% confiables y de calidad
+        </div>
+        <div class="brand__content">
+            <img class="brands__images" src="/images/ranchera.png" alt="">
+            <img class="brands__images" src="/images/queso.png" alt="">
+            <img class="brands__images" src="/images/pan.png" alt="">
+
+
+        </div>
     </div>
 
-    <div class="description__views">
-        <p class="description__title">Descripción</p>
-        <p class="description__content">{{description}}</p>
-
-    </div>
-
-    <div class="ingre__views">
-        <p class="ingre__title">Ingredientes</p>
-        <p class="ingre__content">{{ingredients}}</p>
-
-    </div>
-
-
-   
-    </div>
-
-
-
-
-
-
-
-
-
-
+    <img src="" alt="">
 
 </div>
+</div>
+
+<script src="/scripts/store.js"></script>

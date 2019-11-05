@@ -581,25 +581,32 @@ li{
 
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #fb2424;
+    background-color: #f5db2f;
+
+    @media (max-width:700px) {
+     flex-direction: column;   
+    }
 
     
 }
 
 .footer__a{
-    padding: 2em 2em 2em 2em;
+    padding: .5em;
+    font-size: 1em;
     text-decoration: none;
     font-family: Nunito Sans;
     color: black;
     transition: all 0.5s ease;
 
+   
+
 }
 
 .footer__a:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
     color: white;
     
 }
