@@ -1347,3 +1347,48 @@ a {
   border: none;
   text-decoration: none;
   color: white; }
+
+.productCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.productCart__name {
+  font-family: Nunito Sans;
+  font-weight: 900;
+  font-size: 1.2em;
+  color: black; }
+
+.productCart__image {
+  width: 15%; }
+
+.delete {
+  width: 5%;
+  margin-left: 3em; }
+
+.productCart__featuresItem {
+  font-family: Nunito Sans Regular;
+  font-size: 0.8em;
+  color: grey; }
+
+.productCart__price {
+  font-family: Nunito Sans;
+  font-weight: 900;
+  font-size: 1em;
+  color: white;
+  border-radius: 3em;
+  padding: .3em;
+  border: none;
+  background-color: black; }

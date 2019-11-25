@@ -1,0 +1,43 @@
+
+
+.productCart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.productCart__name{
+    font-family: Nunito Sans;
+    font-weight: 900;
+    font-size: 1.2em;
+    color: black;
+}
+
+.productCart__image{
+    width: 15%;
+}
+
+.delete{
+    width: 5%;
+    margin-left: 3em;
+}
+
+.productCart__featuresItem{
+    font-family: Nunito Sans Regular;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.productCart__price{
+    font-family: Nunito Sans;
+    font-weight: 900;
+    font-size: 1em;
+    color: white;
+    border-radius: 3em;
+    padding: .3em;
+    border: none;
+    background-color: black;
+}

@@ -10,6 +10,8 @@ function createRoutes (app, db) {
         response.sendFile(__dirname + '/public/index.html');
     });
 
+   
+
     app.post('/api/cart/:id', (request, response) => {
         var id = request.params.id;
         const products = db.collection('products');
@@ -220,6 +222,84 @@ function createRoutes (app, db) {
         });
         
     });
+
+    app.post('/api/cart/delete', (request, response) => {
+        var id = request.body.id;
+
+        for (let index = 0; index < cartList.length; index++) {
+            const element = cartList[index];
+
+            if (element.id === id) {
+                
+                cartList.indexOf(index);
+                cartList.splice(index, 1);
+                
+            }
+        }
+
+
+        response.send("erasing");
+    });
+
+    app.get('/cart', function(req, res) {
+
+        var listCopy = cartList.slice();
+        var value = 0;
+        var cantidad = [];
+        var is = false;
+        for (var i = 0; i < listCopy.length; i++) {
+            value += listCopy[i].price;
+
+        }
+
+        //idenfica los elementos iguales
+        var count = {};
+        var clean = [];
+
+        listCopy.forEach(function(i) {
+            i = i._id.toString();
+            count[i] = (count[i] || 0) + 1;
+        });
+
+   
+        Object.keys(count).forEach(key => {
+            var obj = listCopy.find(elem => elem._id.toString() === key);
+            obj.count = count[key];
+            clean.push(obj);
+
+        })
+
+        const context = {
+            products: clean,
+            total: value,
+            cant: count,
+        }
+
+        res.render('cart', context);
+
+    });
+
+    app.get('/cart', function (req, res) {
+        const products = db.collection('products');
+        var query= {};        
+        products.find({})
+        // transformamos el cursor a un arreglo
+        .toArray((err, result) => {
+            // asegurarnos de que noh ay error
+            var listCopy = result.slice();
+            //
+            
+            
+            var context = {
+                products: listCopy, pagina:"Carrito"
+            };
+
+            res.render('cart',context);
+    });
+            
+        });
+        
+   
 
     
 }

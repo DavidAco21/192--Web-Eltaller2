@@ -1,0 +1,20 @@
+
+
+{{#each products}}
+<div class="productCart">
+   
+        <img class="productCart__image" src="{{image}}" alt="">
+
+    <div class="productCart__features">
+    <div class="productCart__name">{{mainName}}</div>
+    <p class="productCart__featuresItem">{{typeOfBread}}</p>
+    <p class="productCart__featuresItem">{{ingredients}}</p>
+    <p class="productCart__price">{{price}}</p>
+    </div>
+    <a href="/cart">
+        <img class="delete" data-name="{{this._id}}" src="/images/images1/delete.png" alt="" method='POST'>
+    </a>
+</div>
+{{/each}}
+
+<script src="/scripts/cartDelete.js"></script>
