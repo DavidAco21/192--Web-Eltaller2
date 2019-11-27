@@ -290,6 +290,11 @@ function createRoutes (app, db) {
         res.render('cart', context);
 
     });
+
+    app.get('/api/checkout', function(req, res) {
+        res.render('checkout', context);
+
+    });
     
 }
     module.exports = createRoutes;
