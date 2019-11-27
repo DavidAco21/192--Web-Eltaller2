@@ -291,10 +291,14 @@ function createRoutes (app, db) {
 
     });
 
-    app.get('/api/checkout', function(req, res) {
-        res.render('checkout', context);
-
-    });
+    app.post('/api/checkout', (request, response) => {
+       
+            response.send(checkout);
+            
+        });
+        
+        
+ 
     
 }
     module.exports = createRoutes;
