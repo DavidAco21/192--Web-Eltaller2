@@ -1348,7 +1348,31 @@ a {
   text-decoration: none;
   color: white; }
 
+.yourCart {
+  font-family: Nunito Sans black;
+  font-size: 2em;
+  color: black;
+  padding: .5em 0 0 6em; }
+
 .productCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1em 0 2em 0; }
+
+.space {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1365,14 +1389,54 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
+.count {
+  font-family: Nunito Sans black;
+  font-size: 1em;
+  color: black; }
+
+.evenly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .productCart__name {
   font-family: Nunito Sans;
   font-weight: 900;
   font-size: 1.2em;
   color: black; }
 
+.productCart__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-left: 2em; }
+
 .productCart__image {
-  width: 15%; }
+  width: 10%; }
 
 .delete {
   width: 5%;
@@ -1381,14 +1445,33 @@ a {
 .productCart__featuresItem {
   font-family: Nunito Sans Regular;
   font-size: 0.8em;
-  color: grey; }
+  color: grey;
+  line-height: .2em; }
+
+.gPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .productCart__price {
   font-family: Nunito Sans;
   font-weight: 900;
   font-size: 1em;
   color: white;
-  border-radius: 3em;
-  padding: .3em;
+  background-color: black;
+  padding: .3em .7em;
   border: none;
-  background-color: black; }
+  border-radius: 5em;
+  margin-left: 2em; }

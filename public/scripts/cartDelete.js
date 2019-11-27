@@ -1,30 +1,32 @@
-window.addEventListener('load', function() {
+window.addEventListener('load', function(){
 
-    var remove = document.querySelectorAll('.delete');
+    var btnsAdd = document.querySelectorAll('.delete');
+    var total = document.querySelector('.total');
 
-    remove.forEach(function(btn) {
 
-        btn.addEventListener('click', function(event) {
-           
+    btnsAdd.forEach(function (btn) {
+        
+        btn.addEventListener('click', function(event){
+            event.preventDefault();
             var id = btn.getAttribute('data-name');
 
-     
-            fetch(`/api/cart/delete`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: `id=${id}`,
-            }).then(function(respuesta) {
-                return respuesta.text();
-            }).catch(function(error) {
-                console.error(error);
-            }).then(function(mensaje) {
-                console.log(mensaje);
-            });
+            var promise = fetch('/api/cartProducts/' + id, { method: 'POST' });
+            promise
+                .then(function (response) {
+                    console.log(response);
+                    return response.json();
+                })
+                .then(function (data) {
+                    console.log(data);
+                    total.innerHTML=data.totalCount;
+                });
+
+                window.location.reload();
 
         });
 
     });
+
+  
 
 });

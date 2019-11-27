@@ -1,20 +1,34 @@
 
+<h1 class="yourCart">Tus Pedidos</h1>
 
 {{#each products}}
+<div class="evenly">
 <div class="productCart">
-   
+  
         <img class="productCart__image" src="{{image}}" alt="">
 
     <div class="productCart__features">
-    <div class="productCart__name">{{mainName}}</div>
-    <p class="productCart__featuresItem">{{typeOfBread}}</p>
-    <p class="productCart__featuresItem">{{ingredients}}</p>
-    <p class="productCart__price">{{price}}</p>
+         <div class="gPrice">
+             <div class="productCart__name">{{mainName}}</div>
+            <div class="productCart__price">${{price}}</div>
+        </div>
+        
+        <p class="productCart__featuresItem">{{typeOfBread}}</p>
+        <p class="productCart__featuresItem">{{ingredients}}</p>
+       
     </div>
-    <a href="/cart">
+
+</div>
+
+<div class="space">
+    <p class="count">{{count}}</p>
+<a href="/cart">
         <img class="delete" data-name="{{this._id}}" src="/images/images1/delete.png" alt="" method='POST'>
     </a>
-</div>
+    </div>
+    </div>
+
+<p class="total">{{totalCount}}</p>
 {{/each}}
 
 <script src="/scripts/cartDelete.js"></script>

@@ -223,23 +223,35 @@ function createRoutes (app, db) {
         
     });
 
-    app.post('/api/cart/delete', (request, response) => {
-        var id = request.body.id;
+    app.post('/api/cartProducts/:id', (request,response)=>{
+        var id = request.params.id;
+        
+        var listCopy = cartList.slice();
+        
+        
+        var index=listCopy.length;
+        for(var c=0;c<listCopy.length;c++){
+            if(request.params.id.toString()===listCopy[c]._id.toString()){
+                cartList.splice(c,1);
+            }
+        }
 
-        for (let index = 0; index < cartList.length; index++) {
-            const element = cartList[index];
-
-            if (element.id === id) {
-                
-                cartList.indexOf(index);
-                cartList.splice(index, 1);
+        var price=0;
+        if(listCopy!=null){
+            for(var i=0;i<listCopy.length;i++){
+                price+=listCopy[i].price*listCopy[i].cantidad;
                 
             }
         }
 
-
-        response.send("erasing");
+        response.send({
+            totalCount: "TOTAL $"+price,
+        });
+        
+        
+        
     });
+
 
     app.get('/cart', function(req, res) {
 
@@ -278,29 +290,6 @@ function createRoutes (app, db) {
         res.render('cart', context);
 
     });
-
-    app.get('/cart', function (req, res) {
-        const products = db.collection('products');
-        var query= {};        
-        products.find({})
-        // transformamos el cursor a un arreglo
-        .toArray((err, result) => {
-            // asegurarnos de que noh ay error
-            var listCopy = result.slice();
-            //
-            
-            
-            var context = {
-                products: listCopy, pagina:"Carrito"
-            };
-
-            res.render('cart',context);
-    });
-            
-        });
-        
-   
-
     
 }
     module.exports = createRoutes;

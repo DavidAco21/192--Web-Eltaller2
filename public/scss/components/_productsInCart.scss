@@ -1,4 +1,9 @@
-
+.yourCart{
+    font-family: Nunito Sans black;
+    font-size: 2em;
+    color: black;
+    padding: .5em 0 0 6em;
+}
 
 .productCart{
     display: flex;
@@ -6,7 +11,30 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 1em 0 2em 0 ;
     
+}
+
+.space{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.count{
+    font-family: Nunito Sans black;
+    font-size: 1em;
+    color: black;
+}
+
+.evenly{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .productCart__name{
@@ -16,8 +44,20 @@
     color: black;
 }
 
+
+
+.productCart__features{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2em;
+}
+
 .productCart__image{
-    width: 15%;
+    width: 10%;
+
 }
 
 .delete{
@@ -29,6 +69,16 @@
     font-family: Nunito Sans Regular;
     font-size: 0.8em;
     color: grey;
+    line-height: .2em;
+}
+
+.gPrice{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 .productCart__price{
@@ -36,8 +86,10 @@
     font-weight: 900;
     font-size: 1em;
     color: white;
-    border-radius: 3em;
-    padding: .3em;
-    border: none;
     background-color: black;
+    padding: .3em .7em;
+    border: none;
+    border-radius: 5em;
+    margin-left: 2em;
+
 }
