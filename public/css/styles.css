@@ -1370,7 +1370,21 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1em 0 2em 0; }
+  padding: 1em 0 2em 0;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
+
+.toCheckout {
+  margin-top: 10px;
+  padding: 1em 6em;
+  background-color: #678E12;
+  font-family: Nunito sans black;
+  border-radius: 25px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 2em; }
 
 .space {
   display: -webkit-box;
