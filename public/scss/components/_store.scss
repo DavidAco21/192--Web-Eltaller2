@@ -270,4 +270,18 @@ text-align: center;
     padding: 1em 0 1em 0;
 }
 
+@media (max-width: 650px){
+    .sectionProducts{
+    flex-direction: column;
+    }
+
+    .orderandproducts{
+        width: 100%;
+    }
+
+
+
+
+}
+
 

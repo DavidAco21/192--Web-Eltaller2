@@ -1129,6 +1129,15 @@ a {
   color: black;
   padding: 1em 0 1em 0; }
 
+@media (max-width: 650px) {
+  .sectionProducts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .orderandproducts {
+    width: 100%; } }
+
 .viewProducts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1511,6 +1520,10 @@ a {
   border: none;
   border-radius: 5em;
   margin-left: 2em; }
+
+@media (max-width: 650px) {
+  .yourCart {
+    padding: 0 0 0 1em; } }
 
 .topCheckout {
   font-family: Nunito Sans black;

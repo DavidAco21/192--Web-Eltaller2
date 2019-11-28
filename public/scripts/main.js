@@ -41,7 +41,6 @@
         
     }
 
-    car.addEventListener('click', ocultar);
     button.addEventListener('click', handleClick);
     btn.addEventListener('click', handleClick);
     
