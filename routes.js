@@ -344,6 +344,17 @@ function createRoutes (app, db) {
 
     });
 
+    app.post('/checkout/orders', (resquest, response) => {
+
+        const orders = db.collection('orders');
+        request.body.cartList = cartList;
+
+        orders.insertOne(request.body);
+
+        response.send({ message: 'saved'});
+
+    });
+
     
 }
     module.exports = createRoutes;
