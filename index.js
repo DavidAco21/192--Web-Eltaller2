@@ -25,7 +25,7 @@ const assert = require('assert');
 const createRoutes = require('./routes.js');
 
 //Connection URL
-const url = 'mongodb+srv://DavidAcosta:Cuantocabron21@cluster0-ofu3w.mongodb.net/tienda';
+const url = 'mongodb+srv://DavidAcosta:Cuantocabron21@cluster0-ofu3w.mongodb.net/tienda?retryWrites=true&w=majority';
 
 // Database Name
 const dbName = 'products';
