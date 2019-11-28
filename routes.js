@@ -351,7 +351,7 @@ function createRoutes (app, db) {
 
         orders.insertOne(request.body);
 
-        response.send({ message: 'saved'});
+        response.send({ message: 'ok'});
 
     });
 
