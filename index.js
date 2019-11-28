@@ -54,6 +54,5 @@ client.connect(function(err) {
 app.use(express.static('public'));
 
 
-app.listen(port, () => {
-    console.log(process.env.PORT || 1234);
-});
+app.listen(process.envPORT || 1234);
+
