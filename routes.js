@@ -344,7 +344,7 @@ function createRoutes (app, db) {
 
     });
 
-    app.post('/checkout/orders', (resquest, response) => {
+    app.post('/checkout/orders', (request, response) => {
 
         const orders = db.collection('orders');
         request.body.cartList = cartList;
