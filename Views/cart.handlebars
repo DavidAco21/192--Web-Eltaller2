@@ -18,20 +18,23 @@
        
     </div>
 
-</div>
-
-<div class="space">
+    <div class="space">
     <p class="count">{{count}}</p>
 <a href="/cart">
         <img class="delete" data-name="{{this._id}}" src="/images/images1/delete.png" alt="" method='POST'>
     </a>
     </div>
+
+</div>
+
+
     
   
 {{/each}}
-<p class="total">{{totalCount}}</p>
-
+<div class="close__cart">
+<p class="total">Total: {{total}}</p>
 <a class="toCheckout" href="/checkout">Hacer Pedido</a>
+</div>
   </div>    
 
 <script src="/scripts/cartDelete.js"></script>

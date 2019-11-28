@@ -334,6 +334,16 @@ function createRoutes (app, db) {
         
         
     });
+
+    app.get('/checkout', function(req, res){
+        const products = db.collection('products');
+        var query = {};
+
+        res.render('checkout');
+
+
+    });
+
     
 }
     module.exports = createRoutes;

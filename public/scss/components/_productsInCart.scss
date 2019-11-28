@@ -16,6 +16,21 @@
 
 }
 
+.total{
+    font-family: Nunito Sans black;
+    font-size: 1em;
+    color: black;
+    
+}
+
+.close__cart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .toCheckout{
     margin-top: 10px;
     padding: 1em 6em;
