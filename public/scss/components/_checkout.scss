@@ -1,0 +1,36 @@
+
+.topCheckout{
+    font-family: Nunito Sans black;
+    font-size: 2em;
+    color: black;
+    padding: .5em 0 0 6em;
+}
+
+.check__input{
+    padding: 1em 3em;
+    color: black;
+    border-radius: 3em;
+    border: 1px solid black;
+   margin-top: 1em;
+}
+
+.btn__submit{
+    margin-top: 2em;
+    padding: 1em 6em;
+    background-color: #678E12;
+    font-family: Nunito sans black;
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.information__checkout{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
