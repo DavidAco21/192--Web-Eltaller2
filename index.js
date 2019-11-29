@@ -53,7 +53,4 @@ client.connect(function(err) {
 // definir una carpeta como pública
 app.use(express.static('public'));
 
-
-app.listen(port, () => {
-    console.log(process.env.PORT || 1234);
-});
+app.listen(process.env.PORT || port);
