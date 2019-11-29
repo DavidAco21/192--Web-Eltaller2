@@ -195,7 +195,7 @@ function createRoutes (app, db) {
                 var context = {
                     products: listCopy, pagina:"Tienda"
                 };
-
+                console.log(listCopy);
                 response.render('store',context);
         });
     });
