@@ -55,7 +55,7 @@ client.connect(function(err) {
 MongoClient.connect(
 
 
-    "mongodb+srv://cluster0-ofu3w.mongodb.net/tienda    ", {
+    "mongodb+srv://cluster0-ofu3w.mongodb.net/tienda", {
         auth: {
             user: "DavidAcosta",
             password: "Cuantarazon21"
