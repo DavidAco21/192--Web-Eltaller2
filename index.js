@@ -38,7 +38,6 @@ const client = new MongoClient(url);
 app.use(express.static('public'));
 
 
-
 //conectarse al cliente
 client.connect(function(err) {
     
