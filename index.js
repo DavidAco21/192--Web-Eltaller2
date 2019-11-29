@@ -2,8 +2,8 @@ const express = require('express');
 // importar body parser
 var bodyParser = require('body-parser');
 // importar handlebars :)
-var exphbs = require('express-handlebars');
-
+var exphbs  = require('express-handlebars');
+ 
 // instanciar app
 const app = express();
 //lineas de handlebars
@@ -14,7 +14,7 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // definir puerto
-//const port = 3000;
+const port = 3000;
 
 // importar mongo
 const MongoClient = require('mongodb').MongoClient;
@@ -22,60 +22,40 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 
 //importar createRoutes
-const createRoutes = require('./routes');
+const createRoutes = require('./routes.js');
 
 //Connection URL
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://DavidAcosta:Cuantarazon21@cluster0-ofu3w.mongodb.net/tienda';
 
 // Database Name
-
+const dbName = 'products';
 
 // Create a new MongoClient
 const client = new MongoClient(url);
 
-/*
-//conectarse al cliente
-client.connect(function(err) {
-    assert.equal(null, err);
-    console.log("Connected successfully to server");
-
-    //le dice que se conecte a la base de datos que ya creamos
-    const db = client.db(dbName);
-
-
-    //products es el nombre de la colección en la base de datos, debe llamarse igual 
-    const tipoDinosaurios = db.collection('products');
-
-    createRoutes(app, db);
-
-});
-*/
-
-
-MongoClient.connect(
-
-
-    "mongodb+srv://cluster0-ofu3w.mongodb.net/bochanwiches", {
-        auth: {
-            user: "DavidAcosta",
-            password: "Cuantarazon21"
-        }
-    },
-    function(err, client) {
-        const db = client.db('tienda');
-
-        const tipoDinosaurios = db.collection('products');
-        createRoutes(app, db);
-
-
-        app.listen(process.env.PORT || 1234);
-        //client.close();
-    });
 
 // definir una carpeta como pública
 app.use(express.static('public'));
 
-/*
-app.listen(port, () => {
-    console.log(`Servidor iniciado en el puerto ${port}`);
-});*/
+
+
+//conectarse al cliente
+client.connect(function(err) {
+    
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
+    
+    //le dice que se conecte a la base de datos que ya creamos
+    const db = client.db('tienda');
+    
+    
+    //products es el nombre de la colección en la base de datos, debe llamarse igual 
+    const tipoDinosaurios = db.collection('products');
+
+    createRoutes(app,db);
+
+    app.listen(process.env.PORT || port);
+    
+});
+
+
