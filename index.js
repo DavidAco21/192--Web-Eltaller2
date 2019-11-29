@@ -32,7 +32,7 @@ const dbName = 'products';
 
 // Create a new MongoClient
 const client = new MongoClient(url);
-
+/*
 //conectarse al cliente
 client.connect(function(err) {
     
@@ -49,6 +49,7 @@ client.connect(function(err) {
     createRoutes(app,db);
     
 });
+*/
 
 // definir una carpeta como pública
 app.use(express.static('public'));
