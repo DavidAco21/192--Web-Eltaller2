@@ -25,13 +25,36 @@ const assert = require('assert');
 const createRoutes = require('./routes.js');
 
 //Connection URL
-const url = 'mongodb+srv://DavidAcosta:Cuantarazon21@cluster0-ofu3w.mongodb.net/tienda';
+const url = 'mongodb://localhost:27017';
 
 // Database Name
-const dbName = 'products';
+const dbName = 'tienda';
 
 // Create a new MongoClient
 const client = new MongoClient(url);
+
+
+MongoClient.connect(
+
+
+    "mongodb+srv://cluster0-ofu3w.mongodb.net/tienda", {
+        auth: {
+            user: "DavidAcosta",
+            password: "Cuantarazon21"
+        }
+    },
+    function(err, client) {
+        const db = client.db(dbName);
+
+        const tipoDinosaurios = db.collection('products');
+        createRoutes(app, db);
+
+       
+
+
+        app.listen(process.env.PORT || 1234);
+        //client.close();
+    });
 /*
 //conectarse al cliente
 client.connect(function(err) {
@@ -53,5 +76,3 @@ client.connect(function(err) {
 
 // definir una carpeta como pública
 app.use(express.static('public'));
-
-app.listen(process.env.PORT || port);
