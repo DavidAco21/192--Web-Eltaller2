@@ -14,7 +14,7 @@ function createRoutes (app, db) {
 
     app.post('/api/cart/:id', (request, response) => {
         var id = request.params.id;
-        const products = db.collection('products');
+        const products = db.collection('productos');
         var query= {};        
         
         var esId=false;
@@ -62,7 +62,7 @@ function createRoutes (app, db) {
     // });
 
     app.get('/tienda', (request, response) => {
-        const products = db.collection('products');
+        const products = db.collection('productos');
         console.log('Alguien entró a la tienda');
 
         //buscamos todos los productos
@@ -201,7 +201,7 @@ function createRoutes (app, db) {
     });
 
     app.get('/products/:id', function (req, res) {
-        const products = db.collection('products');
+        const products = db.collection('productos');
         var query= {};        
         products.find({})
         // transformamos el cursor a un arreglo
@@ -293,7 +293,7 @@ function createRoutes (app, db) {
 
    app.post('/api/cart/:id', (request, response) => {
         var id = request.params.id;
-        const products = db.collection('products');
+        const products = db.collection('productos');
         var query= {};        
         
         var esId=false;
@@ -336,7 +336,7 @@ function createRoutes (app, db) {
     });
 
     app.get('/checkout', function(req, res){
-        const products = db.collection('products');
+        const products = db.collection('productos');
         var query = {};
 
         res.render('checkout');
